@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 - phpMyAdmin XML Dump
@@ -17,6 +18,27 @@
     <pma:structure_schemas>
         <pma:database name="disperin" collation="latin1_swedish_ci" charset="latin1">
             <pma:table name="wp_commentmeta">
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.7.0
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Oct 11, 2018 at 08:03 AM
+- Server version: 10.1.26-MariaDB
+- PHP Version: 7.1.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="disperin" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="wp_commentmeta">
+>>>>>>> 60ea42afa8000278c7428628776b04712bf47f35
                 CREATE TABLE `wp_commentmeta` (
                   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
                   `comment_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -79,9 +101,15 @@
                   `autoload` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'yes',
                   PRIMARY KEY (`option_id`),
                   UNIQUE KEY `option_name` (`option_name`)
+<<<<<<< HEAD
                 ) ENGINE=InnoDB AUTO_INCREMENT=122 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
             </pma:table>
             <pma:table name="wp_postmeta">
+=======
+                ) ENGINE=InnoDB AUTO_INCREMENT=122 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+            <pma:table name="wp_postmeta">
+>>>>>>> 60ea42afa8000278c7428628776b04712bf47f35
                 CREATE TABLE `wp_postmeta` (
                   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
                   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -122,9 +150,15 @@
                   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
                   KEY `post_parent` (`post_parent`),
                   KEY `post_author` (`post_author`)
+<<<<<<< HEAD
                 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
             </pma:table>
             <pma:table name="wp_termmeta">
+=======
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+            <pma:table name="wp_termmeta">
+>>>>>>> 60ea42afa8000278c7428628776b04712bf47f35
                 CREATE TABLE `wp_termmeta` (
                   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
                   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -177,9 +211,15 @@
                   PRIMARY KEY (`umeta_id`),
                   KEY `user_id` (`user_id`),
                   KEY `meta_key` (`meta_key`(191))
+<<<<<<< HEAD
                 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
             </pma:table>
             <pma:table name="wp_users">
+=======
+                ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+            <pma:table name="wp_users">
+>>>>>>> 60ea42afa8000278c7428628776b04712bf47f35
                 CREATE TABLE `wp_users` (
                   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
                   `user_login` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -195,6 +235,7 @@
                   KEY `user_login_key` (`user_login`),
                   KEY `user_nicename` (`user_nicename`),
                   KEY `user_email` (`user_email`)
+<<<<<<< HEAD
                 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
             </pma:table>
         </pma:database>
@@ -985,6 +1026,798 @@ Commenter avatars come from &lt;a href=&quot;https://gravatar.com&quot;&gt;Grava
             <column name="post_author">1</column>
             <column name="post_date">2018-10-11 06:02:59</column>
             <column name="post_date_gmt">2018-10-11 06:02:59</column>
+=======
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'disperin'
+    -->
+    <database name="disperin">
+        <!-- Table wp_commentmeta -->
+        <!-- Table wp_comments -->
+        <table name="wp_comments">
+            <column name="comment_ID">1</column>
+            <column name="comment_post_ID">1</column>
+            <column name="comment_author">A WordPress Commenter</column>
+            <column name="comment_author_email">wapuu@wordpress.example</column>
+            <column name="comment_author_url">https://wordpress.org/</column>
+            <column name="comment_author_IP"></column>
+            <column name="comment_date">2018-10-11 06:02:59</column>
+            <column name="comment_date_gmt">2018-10-11 06:02:59</column>
+            <column name="comment_content">Hi, this is a comment.
+To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
+Commenter avatars come from &lt;a href=&quot;https://gravatar.com&quot;&gt;Gravatar&lt;/a&gt;.</column>
+            <column name="comment_karma">0</column>
+            <column name="comment_approved">1</column>
+            <column name="comment_agent"></column>
+            <column name="comment_type"></column>
+            <column name="comment_parent">0</column>
+            <column name="user_id">0</column>
+        </table>
+        <!-- Table wp_links -->
+        <!-- Table wp_options -->
+        <table name="wp_options">
+            <column name="option_id">1</column>
+            <column name="option_name">siteurl</column>
+            <column name="option_value">http://127.0.0.1/DISPERINPROV</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">2</column>
+            <column name="option_name">home</column>
+            <column name="option_value">http://127.0.0.1/DISPERINPROV</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">3</column>
+            <column name="option_name">blogname</column>
+            <column name="option_value">DINAS PERINDUSTRIAN PROVINSI</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">4</column>
+            <column name="option_name">blogdescription</column>
+            <column name="option_value">Just another WordPress site</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">5</column>
+            <column name="option_name">users_can_register</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">6</column>
+            <column name="option_name">admin_email</column>
+            <column name="option_value">rectapanca@gmail.com</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">7</column>
+            <column name="option_name">start_of_week</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">8</column>
+            <column name="option_name">use_balanceTags</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">9</column>
+            <column name="option_name">use_smilies</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">10</column>
+            <column name="option_name">require_name_email</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">11</column>
+            <column name="option_name">comments_notify</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">12</column>
+            <column name="option_name">posts_per_rss</column>
+            <column name="option_value">10</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">13</column>
+            <column name="option_name">rss_use_excerpt</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">14</column>
+            <column name="option_name">mailserver_url</column>
+            <column name="option_value">mail.example.com</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">15</column>
+            <column name="option_name">mailserver_login</column>
+            <column name="option_value">login@example.com</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">16</column>
+            <column name="option_name">mailserver_pass</column>
+            <column name="option_value">password</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">17</column>
+            <column name="option_name">mailserver_port</column>
+            <column name="option_value">110</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">18</column>
+            <column name="option_name">default_category</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">19</column>
+            <column name="option_name">default_comment_status</column>
+            <column name="option_value">open</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">20</column>
+            <column name="option_name">default_ping_status</column>
+            <column name="option_value">open</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">21</column>
+            <column name="option_name">default_pingback_flag</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">22</column>
+            <column name="option_name">posts_per_page</column>
+            <column name="option_value">10</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">23</column>
+            <column name="option_name">date_format</column>
+            <column name="option_value">F j, Y</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">24</column>
+            <column name="option_name">time_format</column>
+            <column name="option_value">g:i a</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">25</column>
+            <column name="option_name">links_updated_date_format</column>
+            <column name="option_value">F j, Y g:i a</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">26</column>
+            <column name="option_name">comment_moderation</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">27</column>
+            <column name="option_name">moderation_notify</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">28</column>
+            <column name="option_name">permalink_structure</column>
+            <column name="option_value">/%year%/%monthnum%/%day%/%postname%/</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">29</column>
+            <column name="option_name">rewrite_rules</column>
+            <column name="option_value">a:74:{s:11:&quot;^wp-json/?$&quot;;s:22:&quot;index.php?rest_route=/&quot;;s:14:&quot;^wp-json/(.*)?&quot;;s:33:&quot;index.php?rest_route=/$matches[1]&quot;;s:21:&quot;^index.php/wp-json/?$&quot;;s:22:&quot;index.php?rest_route=/&quot;;s:24:&quot;^index.php/wp-json/(.*)?&quot;;s:33:&quot;index.php?rest_route=/$matches[1]&quot;;s:48:&quot;.*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\.php$&quot;;s:18:&quot;index.php?feed=old&quot;;s:20:&quot;.*wp-app\.php(/.*)?$&quot;;s:19:&quot;index.php?error=403&quot;;s:18:&quot;.*wp-register.php$&quot;;s:23:&quot;index.php?register=true&quot;;s:32:&quot;feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:27:&quot;index.php?&amp;feed=$matches[1]&quot;;s:27:&quot;(feed|rdf|rss|rss2|atom)/?$&quot;;s:27:&quot;index.php?&amp;feed=$matches[1]&quot;;s:8:&quot;embed/?$&quot;;s:21:&quot;index.php?&amp;embed=true&quot;;s:20:&quot;page/?([0-9]{1,})/?$&quot;;s:28:&quot;index.php?&amp;paged=$matches[1]&quot;;s:41:&quot;comments/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:42:&quot;index.php?&amp;feed=$matches[1]&amp;withcomments=1&quot;;s:36:&quot;comments/(feed|rdf|rss|rss2|atom)/?$&quot;;s:42:&quot;index.php?&amp;feed=$matches[1]&amp;withcomments=1&quot;;s:17:&quot;comments/embed/?$&quot;;s:21:&quot;index.php?&amp;embed=true&quot;;s:44:&quot;search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:40:&quot;index.php?s=$matches[1]&amp;feed=$matches[2]&quot;;s:39:&quot;search/(.+)/(feed|rdf|rss|rss2|atom)/?$&quot;;s:40:&quot;index.php?s=$matches[1]&amp;feed=$matches[2]&quot;;s:20:&quot;search/(.+)/embed/?$&quot;;s:34:&quot;index.php?s=$matches[1]&amp;embed=true&quot;;s:32:&quot;search/(.+)/page/?([0-9]{1,})/?$&quot;;s:41:&quot;index.php?s=$matches[1]&amp;paged=$matches[2]&quot;;s:14:&quot;search/(.+)/?$&quot;;s:23:&quot;index.php?s=$matches[1]&quot;;s:47:&quot;author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:50:&quot;index.php?author_name=$matches[1]&amp;feed=$matches[2]&quot;;s:42:&quot;author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$&quot;;s:50:&quot;index.php?author_name=$matches[1]&amp;feed=$matches[2]&quot;;s:23:&quot;author/([^/]+)/embed/?$&quot;;s:44:&quot;index.php?author_name=$matches[1]&amp;embed=true&quot;;s:35:&quot;author/([^/]+)/page/?([0-9]{1,})/?$&quot;;s:51:&quot;index.php?author_name=$matches[1]&amp;paged=$matches[2]&quot;;s:17:&quot;author/([^/]+)/?$&quot;;s:33:&quot;index.php?author_name=$matches[1]&quot;;s:69:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:80:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;feed=$matches[4]&quot;;s:64:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$&quot;;s:80:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;feed=$matches[4]&quot;;s:45:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/embed/?$&quot;;s:74:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;embed=true&quot;;s:57:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$&quot;;s:81:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;paged=$matches[4]&quot;;s:39:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$&quot;;s:63:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&quot;;s:56:&quot;([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:64:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;feed=$matches[3]&quot;;s:51:&quot;([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$&quot;;s:64:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;feed=$matches[3]&quot;;s:32:&quot;([0-9]{4})/([0-9]{1,2})/embed/?$&quot;;s:58:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;embed=true&quot;;s:44:&quot;([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$&quot;;s:65:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;paged=$matches[3]&quot;;s:26:&quot;([0-9]{4})/([0-9]{1,2})/?$&quot;;s:47:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&quot;;s:43:&quot;([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:43:&quot;index.php?year=$matches[1]&amp;feed=$matches[2]&quot;;s:38:&quot;([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$&quot;;s:43:&quot;index.php?year=$matches[1]&amp;feed=$matches[2]&quot;;s:19:&quot;([0-9]{4})/embed/?$&quot;;s:37:&quot;index.php?year=$matches[1]&amp;embed=true&quot;;s:31:&quot;([0-9]{4})/page/?([0-9]{1,})/?$&quot;;s:44:&quot;index.php?year=$matches[1]&amp;paged=$matches[2]&quot;;s:13:&quot;([0-9]{4})/?$&quot;;s:26:&quot;index.php?year=$matches[1]&quot;;s:58:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/?$&quot;;s:32:&quot;index.php?attachment=$matches[1]&quot;;s:68:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/trackback/?$&quot;;s:37:&quot;index.php?attachment=$matches[1]&amp;tb=1&quot;;s:88:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:49:&quot;index.php?attachment=$matches[1]&amp;feed=$matches[2]&quot;;s:83:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$&quot;;s:49:&quot;index.php?attachment=$matches[1]&amp;feed=$matches[2]&quot;;s:83:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$&quot;;s:50:&quot;index.php?attachment=$matches[1]&amp;cpage=$matches[2]&quot;;s:64:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/embed/?$&quot;;s:43:&quot;index.php?attachment=$matches[1]&amp;embed=true&quot;;s:53:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/embed/?$&quot;;s:91:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;name=$matches[4]&amp;embed=true&quot;;s:57:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/trackback/?$&quot;;s:85:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;name=$matches[4]&amp;tb=1&quot;;s:77:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:97:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;name=$matches[4]&amp;feed=$matches[5]&quot;;s:72:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/(feed|rdf|rss|rss2|atom)/?$&quot;;s:97:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;name=$matches[4]&amp;feed=$matches[5]&quot;;s:65:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/page/?([0-9]{1,})/?$&quot;;s:98:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;name=$matches[4]&amp;paged=$matches[5]&quot;;s:72:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/comment-page-([0-9]{1,})/?$&quot;;s:98:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;name=$matches[4]&amp;cpage=$matches[5]&quot;;s:61:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)(?:/([0-9]+))?/?$&quot;;s:97:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;name=$matches[4]&amp;page=$matches[5]&quot;;s:47:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/?$&quot;;s:32:&quot;index.php?attachment=$matches[1]&quot;;s:57:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/trackback/?$&quot;;s:37:&quot;index.php?attachment=$matches[1]&amp;tb=1&quot;;s:77:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:49:&quot;index.php?attachment=$matches[1]&amp;feed=$matches[2]&quot;;s:72:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$&quot;;s:49:&quot;index.php?attachment=$matches[1]&amp;feed=$matches[2]&quot;;s:72:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$&quot;;s:50:&quot;index.php?attachment=$matches[1]&amp;cpage=$matches[2]&quot;;s:53:&quot;[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/embed/?$&quot;;s:43:&quot;index.php?attachment=$matches[1]&amp;embed=true&quot;;s:64:&quot;([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/comment-page-([0-9]{1,})/?$&quot;;s:81:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;day=$matches[3]&amp;cpage=$matches[4]&quot;;s:51:&quot;([0-9]{4})/([0-9]{1,2})/comment-page-([0-9]{1,})/?$&quot;;s:65:&quot;index.php?year=$matches[1]&amp;monthnum=$matches[2]&amp;cpage=$matches[3]&quot;;s:38:&quot;([0-9]{4})/comment-page-([0-9]{1,})/?$&quot;;s:44:&quot;index.php?year=$matches[1]&amp;cpage=$matches[2]&quot;;s:27:&quot;.?.+?/attachment/([^/]+)/?$&quot;;s:32:&quot;index.php?attachment=$matches[1]&quot;;s:37:&quot;.?.+?/attachment/([^/]+)/trackback/?$&quot;;s:37:&quot;index.php?attachment=$matches[1]&amp;tb=1&quot;;s:57:&quot;.?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:49:&quot;index.php?attachment=$matches[1]&amp;feed=$matches[2]&quot;;s:52:&quot;.?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$&quot;;s:49:&quot;index.php?attachment=$matches[1]&amp;feed=$matches[2]&quot;;s:52:&quot;.?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$&quot;;s:50:&quot;index.php?attachment=$matches[1]&amp;cpage=$matches[2]&quot;;s:33:&quot;.?.+?/attachment/([^/]+)/embed/?$&quot;;s:43:&quot;index.php?attachment=$matches[1]&amp;embed=true&quot;;s:16:&quot;(.?.+?)/embed/?$&quot;;s:41:&quot;index.php?pagename=$matches[1]&amp;embed=true&quot;;s:20:&quot;(.?.+?)/trackback/?$&quot;;s:35:&quot;index.php?pagename=$matches[1]&amp;tb=1&quot;;s:40:&quot;(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$&quot;;s:47:&quot;index.php?pagename=$matches[1]&amp;feed=$matches[2]&quot;;s:35:&quot;(.?.+?)/(feed|rdf|rss|rss2|atom)/?$&quot;;s:47:&quot;index.php?pagename=$matches[1]&amp;feed=$matches[2]&quot;;s:28:&quot;(.?.+?)/page/?([0-9]{1,})/?$&quot;;s:48:&quot;index.php?pagename=$matches[1]&amp;paged=$matches[2]&quot;;s:35:&quot;(.?.+?)/comment-page-([0-9]{1,})/?$&quot;;s:48:&quot;index.php?pagename=$matches[1]&amp;cpage=$matches[2]&quot;;s:24:&quot;(.?.+?)(?:/([0-9]+))?/?$&quot;;s:47:&quot;index.php?pagename=$matches[1]&amp;page=$matches[2]&quot;;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">30</column>
+            <column name="option_name">hack_file</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">31</column>
+            <column name="option_name">blog_charset</column>
+            <column name="option_value">UTF-8</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">32</column>
+            <column name="option_name">moderation_keys</column>
+            <column name="option_value"></column>
+            <column name="autoload">no</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">33</column>
+            <column name="option_name">active_plugins</column>
+            <column name="option_value">a:0:{}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">34</column>
+            <column name="option_name">category_base</column>
+            <column name="option_value"></column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">35</column>
+            <column name="option_name">ping_sites</column>
+            <column name="option_value">http://rpc.pingomatic.com/</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">36</column>
+            <column name="option_name">comment_max_links</column>
+            <column name="option_value">2</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">37</column>
+            <column name="option_name">gmt_offset</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">38</column>
+            <column name="option_name">default_email_category</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">39</column>
+            <column name="option_name">recently_edited</column>
+            <column name="option_value"></column>
+            <column name="autoload">no</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">40</column>
+            <column name="option_name">template</column>
+            <column name="option_value">twentyseventeen</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">41</column>
+            <column name="option_name">stylesheet</column>
+            <column name="option_value">twentyseventeen</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">42</column>
+            <column name="option_name">comment_whitelist</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">43</column>
+            <column name="option_name">blacklist_keys</column>
+            <column name="option_value"></column>
+            <column name="autoload">no</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">44</column>
+            <column name="option_name">comment_registration</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">45</column>
+            <column name="option_name">html_type</column>
+            <column name="option_value">text/html</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">46</column>
+            <column name="option_name">use_trackback</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">47</column>
+            <column name="option_name">default_role</column>
+            <column name="option_value">subscriber</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">48</column>
+            <column name="option_name">db_version</column>
+            <column name="option_value">38590</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">49</column>
+            <column name="option_name">uploads_use_yearmonth_folders</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">50</column>
+            <column name="option_name">upload_path</column>
+            <column name="option_value"></column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">51</column>
+            <column name="option_name">blog_public</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">52</column>
+            <column name="option_name">default_link_category</column>
+            <column name="option_value">2</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">53</column>
+            <column name="option_name">show_on_front</column>
+            <column name="option_value">posts</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">54</column>
+            <column name="option_name">tag_base</column>
+            <column name="option_value"></column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">55</column>
+            <column name="option_name">show_avatars</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">56</column>
+            <column name="option_name">avatar_rating</column>
+            <column name="option_value">G</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">57</column>
+            <column name="option_name">upload_url_path</column>
+            <column name="option_value"></column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">58</column>
+            <column name="option_name">thumbnail_size_w</column>
+            <column name="option_value">150</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">59</column>
+            <column name="option_name">thumbnail_size_h</column>
+            <column name="option_value">150</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">60</column>
+            <column name="option_name">thumbnail_crop</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">61</column>
+            <column name="option_name">medium_size_w</column>
+            <column name="option_value">300</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">62</column>
+            <column name="option_name">medium_size_h</column>
+            <column name="option_value">300</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">63</column>
+            <column name="option_name">avatar_default</column>
+            <column name="option_value">mystery</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">64</column>
+            <column name="option_name">large_size_w</column>
+            <column name="option_value">1024</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">65</column>
+            <column name="option_name">large_size_h</column>
+            <column name="option_value">1024</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">66</column>
+            <column name="option_name">image_default_link_type</column>
+            <column name="option_value">none</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">67</column>
+            <column name="option_name">image_default_size</column>
+            <column name="option_value"></column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">68</column>
+            <column name="option_name">image_default_align</column>
+            <column name="option_value"></column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">69</column>
+            <column name="option_name">close_comments_for_old_posts</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">70</column>
+            <column name="option_name">close_comments_days_old</column>
+            <column name="option_value">14</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">71</column>
+            <column name="option_name">thread_comments</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">72</column>
+            <column name="option_name">thread_comments_depth</column>
+            <column name="option_value">5</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">73</column>
+            <column name="option_name">page_comments</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">74</column>
+            <column name="option_name">comments_per_page</column>
+            <column name="option_value">50</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">75</column>
+            <column name="option_name">default_comments_page</column>
+            <column name="option_value">newest</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">76</column>
+            <column name="option_name">comment_order</column>
+            <column name="option_value">asc</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">77</column>
+            <column name="option_name">sticky_posts</column>
+            <column name="option_value">a:0:{}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">78</column>
+            <column name="option_name">widget_categories</column>
+            <column name="option_value">a:2:{i:2;a:4:{s:5:&quot;title&quot;;s:0:&quot;&quot;;s:5:&quot;count&quot;;i:0;s:12:&quot;hierarchical&quot;;i:0;s:8:&quot;dropdown&quot;;i:0;}s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">79</column>
+            <column name="option_name">widget_text</column>
+            <column name="option_value">a:0:{}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">80</column>
+            <column name="option_name">widget_rss</column>
+            <column name="option_value">a:0:{}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">81</column>
+            <column name="option_name">uninstall_plugins</column>
+            <column name="option_value">a:0:{}</column>
+            <column name="autoload">no</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">82</column>
+            <column name="option_name">timezone_string</column>
+            <column name="option_value"></column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">83</column>
+            <column name="option_name">page_for_posts</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">84</column>
+            <column name="option_name">page_on_front</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">85</column>
+            <column name="option_name">default_post_format</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">86</column>
+            <column name="option_name">link_manager_enabled</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">87</column>
+            <column name="option_name">finished_splitting_shared_terms</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">88</column>
+            <column name="option_name">site_icon</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">89</column>
+            <column name="option_name">medium_large_size_w</column>
+            <column name="option_value">768</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">90</column>
+            <column name="option_name">medium_large_size_h</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">91</column>
+            <column name="option_name">wp_page_for_privacy_policy</column>
+            <column name="option_value">3</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">92</column>
+            <column name="option_name">show_comments_cookies_opt_in</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">93</column>
+            <column name="option_name">initial_db_version</column>
+            <column name="option_value">38590</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">94</column>
+            <column name="option_name">wp_user_roles</column>
+            <column name="option_value">a:5:{s:13:&quot;administrator&quot;;a:2:{s:4:&quot;name&quot;;s:13:&quot;Administrator&quot;;s:12:&quot;capabilities&quot;;a:61:{s:13:&quot;switch_themes&quot;;b:1;s:11:&quot;edit_themes&quot;;b:1;s:16:&quot;activate_plugins&quot;;b:1;s:12:&quot;edit_plugins&quot;;b:1;s:10:&quot;edit_users&quot;;b:1;s:10:&quot;edit_files&quot;;b:1;s:14:&quot;manage_options&quot;;b:1;s:17:&quot;moderate_comments&quot;;b:1;s:17:&quot;manage_categories&quot;;b:1;s:12:&quot;manage_links&quot;;b:1;s:12:&quot;upload_files&quot;;b:1;s:6:&quot;import&quot;;b:1;s:15:&quot;unfiltered_html&quot;;b:1;s:10:&quot;edit_posts&quot;;b:1;s:17:&quot;edit_others_posts&quot;;b:1;s:20:&quot;edit_published_posts&quot;;b:1;s:13:&quot;publish_posts&quot;;b:1;s:10:&quot;edit_pages&quot;;b:1;s:4:&quot;read&quot;;b:1;s:8:&quot;level_10&quot;;b:1;s:7:&quot;level_9&quot;;b:1;s:7:&quot;level_8&quot;;b:1;s:7:&quot;level_7&quot;;b:1;s:7:&quot;level_6&quot;;b:1;s:7:&quot;level_5&quot;;b:1;s:7:&quot;level_4&quot;;b:1;s:7:&quot;level_3&quot;;b:1;s:7:&quot;level_2&quot;;b:1;s:7:&quot;level_1&quot;;b:1;s:7:&quot;level_0&quot;;b:1;s:17:&quot;edit_others_pages&quot;;b:1;s:20:&quot;edit_published_pages&quot;;b:1;s:13:&quot;publish_pages&quot;;b:1;s:12:&quot;delete_pages&quot;;b:1;s:19:&quot;delete_others_pages&quot;;b:1;s:22:&quot;delete_published_pages&quot;;b:1;s:12:&quot;delete_posts&quot;;b:1;s:19:&quot;delete_others_posts&quot;;b:1;s:22:&quot;delete_published_posts&quot;;b:1;s:20:&quot;delete_private_posts&quot;;b:1;s:18:&quot;edit_private_posts&quot;;b:1;s:18:&quot;read_private_posts&quot;;b:1;s:20:&quot;delete_private_pages&quot;;b:1;s:18:&quot;edit_private_pages&quot;;b:1;s:18:&quot;read_private_pages&quot;;b:1;s:12:&quot;delete_users&quot;;b:1;s:12:&quot;create_users&quot;;b:1;s:17:&quot;unfiltered_upload&quot;;b:1;s:14:&quot;edit_dashboard&quot;;b:1;s:14:&quot;update_plugins&quot;;b:1;s:14:&quot;delete_plugins&quot;;b:1;s:15:&quot;install_plugins&quot;;b:1;s:13:&quot;update_themes&quot;;b:1;s:14:&quot;install_themes&quot;;b:1;s:11:&quot;update_core&quot;;b:1;s:10:&quot;list_users&quot;;b:1;s:12:&quot;remove_users&quot;;b:1;s:13:&quot;promote_users&quot;;b:1;s:18:&quot;edit_theme_options&quot;;b:1;s:13:&quot;delete_themes&quot;;b:1;s:6:&quot;export&quot;;b:1;}}s:6:&quot;editor&quot;;a:2:{s:4:&quot;name&quot;;s:6:&quot;Editor&quot;;s:12:&quot;capabilities&quot;;a:34:{s:17:&quot;moderate_comments&quot;;b:1;s:17:&quot;manage_categories&quot;;b:1;s:12:&quot;manage_links&quot;;b:1;s:12:&quot;upload_files&quot;;b:1;s:15:&quot;unfiltered_html&quot;;b:1;s:10:&quot;edit_posts&quot;;b:1;s:17:&quot;edit_others_posts&quot;;b:1;s:20:&quot;edit_published_posts&quot;;b:1;s:13:&quot;publish_posts&quot;;b:1;s:10:&quot;edit_pages&quot;;b:1;s:4:&quot;read&quot;;b:1;s:7:&quot;level_7&quot;;b:1;s:7:&quot;level_6&quot;;b:1;s:7:&quot;level_5&quot;;b:1;s:7:&quot;level_4&quot;;b:1;s:7:&quot;level_3&quot;;b:1;s:7:&quot;level_2&quot;;b:1;s:7:&quot;level_1&quot;;b:1;s:7:&quot;level_0&quot;;b:1;s:17:&quot;edit_others_pages&quot;;b:1;s:20:&quot;edit_published_pages&quot;;b:1;s:13:&quot;publish_pages&quot;;b:1;s:12:&quot;delete_pages&quot;;b:1;s:19:&quot;delete_others_pages&quot;;b:1;s:22:&quot;delete_published_pages&quot;;b:1;s:12:&quot;delete_posts&quot;;b:1;s:19:&quot;delete_others_posts&quot;;b:1;s:22:&quot;delete_published_posts&quot;;b:1;s:20:&quot;delete_private_posts&quot;;b:1;s:18:&quot;edit_private_posts&quot;;b:1;s:18:&quot;read_private_posts&quot;;b:1;s:20:&quot;delete_private_pages&quot;;b:1;s:18:&quot;edit_private_pages&quot;;b:1;s:18:&quot;read_private_pages&quot;;b:1;}}s:6:&quot;author&quot;;a:2:{s:4:&quot;name&quot;;s:6:&quot;Author&quot;;s:12:&quot;capabilities&quot;;a:10:{s:12:&quot;upload_files&quot;;b:1;s:10:&quot;edit_posts&quot;;b:1;s:20:&quot;edit_published_posts&quot;;b:1;s:13:&quot;publish_posts&quot;;b:1;s:4:&quot;read&quot;;b:1;s:7:&quot;level_2&quot;;b:1;s:7:&quot;level_1&quot;;b:1;s:7:&quot;level_0&quot;;b:1;s:12:&quot;delete_posts&quot;;b:1;s:22:&quot;delete_published_posts&quot;;b:1;}}s:11:&quot;contributor&quot;;a:2:{s:4:&quot;name&quot;;s:11:&quot;Contributor&quot;;s:12:&quot;capabilities&quot;;a:5:{s:10:&quot;edit_posts&quot;;b:1;s:4:&quot;read&quot;;b:1;s:7:&quot;level_1&quot;;b:1;s:7:&quot;level_0&quot;;b:1;s:12:&quot;delete_posts&quot;;b:1;}}s:10:&quot;subscriber&quot;;a:2:{s:4:&quot;name&quot;;s:10:&quot;Subscriber&quot;;s:12:&quot;capabilities&quot;;a:2:{s:4:&quot;read&quot;;b:1;s:7:&quot;level_0&quot;;b:1;}}}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">95</column>
+            <column name="option_name">fresh_site</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">96</column>
+            <column name="option_name">widget_search</column>
+            <column name="option_value">a:2:{i:2;a:1:{s:5:&quot;title&quot;;s:0:&quot;&quot;;}s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">97</column>
+            <column name="option_name">widget_recent-posts</column>
+            <column name="option_value">a:2:{i:2;a:2:{s:5:&quot;title&quot;;s:0:&quot;&quot;;s:6:&quot;number&quot;;i:5;}s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">98</column>
+            <column name="option_name">widget_recent-comments</column>
+            <column name="option_value">a:2:{i:2;a:2:{s:5:&quot;title&quot;;s:0:&quot;&quot;;s:6:&quot;number&quot;;i:5;}s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">99</column>
+            <column name="option_name">widget_archives</column>
+            <column name="option_value">a:2:{i:2;a:3:{s:5:&quot;title&quot;;s:0:&quot;&quot;;s:5:&quot;count&quot;;i:0;s:8:&quot;dropdown&quot;;i:0;}s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">100</column>
+            <column name="option_name">widget_meta</column>
+            <column name="option_value">a:2:{i:2;a:1:{s:5:&quot;title&quot;;s:0:&quot;&quot;;}s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">101</column>
+            <column name="option_name">sidebars_widgets</column>
+            <column name="option_value">a:5:{s:19:&quot;wp_inactive_widgets&quot;;a:0:{}s:9:&quot;sidebar-1&quot;;a:6:{i:0;s:8:&quot;search-2&quot;;i:1;s:14:&quot;recent-posts-2&quot;;i:2;s:17:&quot;recent-comments-2&quot;;i:3;s:10:&quot;archives-2&quot;;i:4;s:12:&quot;categories-2&quot;;i:5;s:6:&quot;meta-2&quot;;}s:9:&quot;sidebar-2&quot;;a:0:{}s:9:&quot;sidebar-3&quot;;a:0:{}s:13:&quot;array_version&quot;;i:3;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">102</column>
+            <column name="option_name">widget_pages</column>
+            <column name="option_value">a:1:{s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">103</column>
+            <column name="option_name">widget_calendar</column>
+            <column name="option_value">a:1:{s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">104</column>
+            <column name="option_name">widget_media_audio</column>
+            <column name="option_value">a:1:{s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">105</column>
+            <column name="option_name">widget_media_image</column>
+            <column name="option_value">a:1:{s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">106</column>
+            <column name="option_name">widget_media_gallery</column>
+            <column name="option_value">a:1:{s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">107</column>
+            <column name="option_name">widget_media_video</column>
+            <column name="option_value">a:1:{s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">108</column>
+            <column name="option_name">widget_tag_cloud</column>
+            <column name="option_value">a:1:{s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">109</column>
+            <column name="option_name">widget_nav_menu</column>
+            <column name="option_value">a:1:{s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">110</column>
+            <column name="option_name">widget_custom_html</column>
+            <column name="option_value">a:1:{s:12:&quot;_multiwidget&quot;;i:1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">111</column>
+            <column name="option_name">cron</column>
+            <column name="option_value">a:3:{i:1539241381;a:1:{s:34:&quot;wp_privacy_delete_old_export_files&quot;;a:1:{s:32:&quot;40cd750bba9870f18aada2478b24840a&quot;;a:3:{s:8:&quot;schedule&quot;;s:6:&quot;hourly&quot;;s:4:&quot;args&quot;;a:0:{}s:8:&quot;interval&quot;;i:3600;}}}i:1539280981;a:3:{s:16:&quot;wp_version_check&quot;;a:1:{s:32:&quot;40cd750bba9870f18aada2478b24840a&quot;;a:3:{s:8:&quot;schedule&quot;;s:10:&quot;twicedaily&quot;;s:4:&quot;args&quot;;a:0:{}s:8:&quot;interval&quot;;i:43200;}}s:17:&quot;wp_update_plugins&quot;;a:1:{s:32:&quot;40cd750bba9870f18aada2478b24840a&quot;;a:3:{s:8:&quot;schedule&quot;;s:10:&quot;twicedaily&quot;;s:4:&quot;args&quot;;a:0:{}s:8:&quot;interval&quot;;i:43200;}}s:16:&quot;wp_update_themes&quot;;a:1:{s:32:&quot;40cd750bba9870f18aada2478b24840a&quot;;a:3:{s:8:&quot;schedule&quot;;s:10:&quot;twicedaily&quot;;s:4:&quot;args&quot;;a:0:{}s:8:&quot;interval&quot;;i:43200;}}}s:7:&quot;version&quot;;i:2;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">112</column>
+            <column name="option_name">theme_mods_twentyseventeen</column>
+            <column name="option_value">a:1:{s:18:&quot;custom_css_post_id&quot;;i:-1;}</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">113</column>
+            <column name="option_name">_transient_is_multi_author</column>
+            <column name="option_value">0</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">114</column>
+            <column name="option_name">_transient_twentyseventeen_categories</column>
+            <column name="option_value">1</column>
+            <column name="autoload">yes</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">116</column>
+            <column name="option_name">_site_transient_update_core</column>
+            <column name="option_value">O:8:&quot;stdClass&quot;:4:{s:7:&quot;updates&quot;;a:1:{i:0;O:8:&quot;stdClass&quot;:10:{s:8:&quot;response&quot;;s:6:&quot;latest&quot;;s:8:&quot;download&quot;;s:59:&quot;https://downloads.wordpress.org/release/wordpress-4.9.8.zip&quot;;s:6:&quot;locale&quot;;s:5:&quot;en_US&quot;;s:8:&quot;packages&quot;;O:8:&quot;stdClass&quot;:5:{s:4:&quot;full&quot;;s:59:&quot;https://downloads.wordpress.org/release/wordpress-4.9.8.zip&quot;;s:10:&quot;no_content&quot;;s:70:&quot;https://downloads.wordpress.org/release/wordpress-4.9.8-no-content.zip&quot;;s:11:&quot;new_bundled&quot;;s:71:&quot;https://downloads.wordpress.org/release/wordpress-4.9.8-new-bundled.zip&quot;;s:7:&quot;partial&quot;;b:0;s:8:&quot;rollback&quot;;b:0;}s:7:&quot;current&quot;;s:5:&quot;4.9.8&quot;;s:7:&quot;version&quot;;s:5:&quot;4.9.8&quot;;s:11:&quot;php_version&quot;;s:5:&quot;5.2.4&quot;;s:13:&quot;mysql_version&quot;;s:3:&quot;5.0&quot;;s:11:&quot;new_bundled&quot;;s:3:&quot;4.7&quot;;s:15:&quot;partial_version&quot;;s:0:&quot;&quot;;}}s:12:&quot;last_checked&quot;;i:1539237787;s:15:&quot;version_checked&quot;;s:5:&quot;4.9.8&quot;;s:12:&quot;translations&quot;;a:0:{}}</column>
+            <column name="autoload">no</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">118</column>
+            <column name="option_name">_site_transient_update_plugins</column>
+            <column name="option_value">O:8:&quot;stdClass&quot;:5:{s:12:&quot;last_checked&quot;;i:1539237790;s:7:&quot;checked&quot;;a:2:{s:19:&quot;akismet/akismet.php&quot;;s:5:&quot;4.0.8&quot;;s:9:&quot;hello.php&quot;;s:3:&quot;1.7&quot;;}s:8:&quot;response&quot;;a:0:{}s:12:&quot;translations&quot;;a:0:{}s:9:&quot;no_update&quot;;a:2:{s:19:&quot;akismet/akismet.php&quot;;O:8:&quot;stdClass&quot;:9:{s:2:&quot;id&quot;;s:21:&quot;w.org/plugins/akismet&quot;;s:4:&quot;slug&quot;;s:7:&quot;akismet&quot;;s:6:&quot;plugin&quot;;s:19:&quot;akismet/akismet.php&quot;;s:11:&quot;new_version&quot;;s:5:&quot;4.0.8&quot;;s:3:&quot;url&quot;;s:38:&quot;https://wordpress.org/plugins/akismet/&quot;;s:7:&quot;package&quot;;s:56:&quot;https://downloads.wordpress.org/plugin/akismet.4.0.8.zip&quot;;s:5:&quot;icons&quot;;a:2:{s:2:&quot;2x&quot;;s:59:&quot;https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272&quot;;s:2:&quot;1x&quot;;s:59:&quot;https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272&quot;;}s:7:&quot;banners&quot;;a:1:{s:2:&quot;1x&quot;;s:61:&quot;https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904&quot;;}s:11:&quot;banners_rtl&quot;;a:0:{}}s:9:&quot;hello.php&quot;;O:8:&quot;stdClass&quot;:9:{s:2:&quot;id&quot;;s:25:&quot;w.org/plugins/hello-dolly&quot;;s:4:&quot;slug&quot;;s:11:&quot;hello-dolly&quot;;s:6:&quot;plugin&quot;;s:9:&quot;hello.php&quot;;s:11:&quot;new_version&quot;;s:3:&quot;1.6&quot;;s:3:&quot;url&quot;;s:42:&quot;https://wordpress.org/plugins/hello-dolly/&quot;;s:7:&quot;package&quot;;s:58:&quot;https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip&quot;;s:5:&quot;icons&quot;;a:2:{s:2:&quot;2x&quot;;s:63:&quot;https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907&quot;;s:2:&quot;1x&quot;;s:63:&quot;https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=969907&quot;;}s:7:&quot;banners&quot;;a:1:{s:2:&quot;1x&quot;;s:65:&quot;https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342&quot;;}s:11:&quot;banners_rtl&quot;;a:0:{}}}}</column>
+            <column name="autoload">no</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">119</column>
+            <column name="option_name">_site_transient_timeout_theme_roots</column>
+            <column name="option_value">1539239588</column>
+            <column name="autoload">no</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">120</column>
+            <column name="option_name">_site_transient_theme_roots</column>
+            <column name="option_value">a:3:{s:13:&quot;twentyfifteen&quot;;s:7:&quot;/themes&quot;;s:15:&quot;twentyseventeen&quot;;s:7:&quot;/themes&quot;;s:13:&quot;twentysixteen&quot;;s:7:&quot;/themes&quot;;}</column>
+            <column name="autoload">no</column>
+        </table>
+        <table name="wp_options">
+            <column name="option_id">121</column>
+            <column name="option_name">_site_transient_update_themes</column>
+            <column name="option_value">O:8:&quot;stdClass&quot;:4:{s:12:&quot;last_checked&quot;;i:1539237790;s:7:&quot;checked&quot;;a:3:{s:13:&quot;twentyfifteen&quot;;s:3:&quot;2.0&quot;;s:15:&quot;twentyseventeen&quot;;s:3:&quot;1.7&quot;;s:13:&quot;twentysixteen&quot;;s:3:&quot;1.5&quot;;}s:8:&quot;response&quot;;a:0:{}s:12:&quot;translations&quot;;a:0:{}}</column>
+            <column name="autoload">no</column>
+        </table>
+        <!-- Table wp_postmeta -->
+        <table name="wp_postmeta">
+            <column name="meta_id">1</column>
+            <column name="post_id">2</column>
+            <column name="meta_key">_wp_page_template</column>
+            <column name="meta_value">default</column>
+        </table>
+        <table name="wp_postmeta">
+            <column name="meta_id">2</column>
+            <column name="post_id">3</column>
+            <column name="meta_key">_wp_page_template</column>
+            <column name="meta_value">default</column>
+        </table>
+        <!-- Table wp_posts -->
+        <table name="wp_posts">
+            <column name="ID">1</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2018-10-11 06:02:59</column>
+            <column name="post_date_gmt">2018-10-11 06:02:59</column>
+            <column name="post_content">Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</column>
+            <column name="post_title">Hello world!</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">open</column>
+            <column name="post_password"></column>
+            <column name="post_name">hello-world</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2018-10-11 06:02:59</column>
+            <column name="post_modified_gmt">2018-10-11 06:02:59</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://127.0.0.1/DISPERINPROV/?p=1</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">post</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">1</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">2</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2018-10-11 06:02:59</column>
+            <column name="post_date_gmt">2018-10-11 06:02:59</column>
+>>>>>>> 60ea42afa8000278c7428628776b04712bf47f35
             <column name="post_content">This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
 
 &lt;blockquote&gt;Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&amp;#241;a coladas. (And gettin' caught in the rain.)&lt;/blockquote&gt;
@@ -993,6 +1826,7 @@ Commenter avatars come from &lt;a href=&quot;https://gravatar.com&quot;&gt;Grava
 
 &lt;blockquote&gt;The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.&lt;/blockquote&gt;
 
+<<<<<<< HEAD
 As a new WordPress user, you should go to &lt;a href=&quot;http://127.0.0.1/DISPERINPROV/wp-admin/&quot;&gt;your dashboard&lt;/a&gt; to delete this page and create new pages for your content. Have fun!</column>
             <column name="post_title">Sample Page</column>
             <column name="post_excerpt"></column>
@@ -1166,4 +2000,179 @@ As a new WordPress user, you should go to &lt;a href=&quot;http://127.0.0.1/DISP
             <column name="display_name">supermomod</column>
         </table>
     </database>
+=======
+As a new WordPress user, you should go to &lt;a href=&quot;http://127.0.0.1/DISPERINPROV/wp-admin/&quot;&gt;your dashboard&lt;/a&gt; to delete this page and create new pages for your content. Have fun!</column>
+            <column name="post_title">Sample Page</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">open</column>
+            <column name="post_password"></column>
+            <column name="post_name">sample-page</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2018-10-11 06:02:59</column>
+            <column name="post_modified_gmt">2018-10-11 06:02:59</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://127.0.0.1/DISPERINPROV/?page_id=2</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">page</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">3</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2018-10-11 06:02:59</column>
+            <column name="post_date_gmt">2018-10-11 06:02:59</column>
+            <column name="post_content">&lt;h2&gt;Who we are&lt;/h2&gt;&lt;p&gt;Our website address is: http://127.0.0.1/DISPERINPROV.&lt;/p&gt;&lt;h2&gt;What personal data we collect and why we collect it&lt;/h2&gt;&lt;h3&gt;Comments&lt;/h3&gt;&lt;p&gt;When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&amp;#8217;s IP address and browser user agent string to help spam detection.&lt;/p&gt;&lt;p&gt;An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.&lt;/p&gt;&lt;h3&gt;Media&lt;/h3&gt;&lt;p&gt;If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.&lt;/p&gt;&lt;h3&gt;Contact forms&lt;/h3&gt;&lt;h3&gt;Cookies&lt;/h3&gt;&lt;p&gt;If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.&lt;/p&gt;&lt;p&gt;If you have an account and you log in to this site, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.&lt;/p&gt;&lt;p&gt;When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &amp;quot;Remember Me&amp;quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.&lt;/p&gt;&lt;p&gt;If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.&lt;/p&gt;&lt;h3&gt;Embedded content from other websites&lt;/h3&gt;&lt;p&gt;Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.&lt;/p&gt;&lt;p&gt;These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.&lt;/p&gt;&lt;h3&gt;Analytics&lt;/h3&gt;&lt;h2&gt;Who we share your data with&lt;/h2&gt;&lt;h2&gt;How long we retain your data&lt;/h2&gt;&lt;p&gt;If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.&lt;/p&gt;&lt;p&gt;For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.&lt;/p&gt;&lt;h2&gt;What rights you have over your data&lt;/h2&gt;&lt;p&gt;If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.&lt;/p&gt;&lt;h2&gt;Where we send your data&lt;/h2&gt;&lt;p&gt;Visitor comments may be checked through an automated spam detection service.&lt;/p&gt;&lt;h2&gt;Your contact information&lt;/h2&gt;&lt;h2&gt;Additional information&lt;/h2&gt;&lt;h3&gt;How we protect your data&lt;/h3&gt;&lt;h3&gt;What data breach procedures we have in place&lt;/h3&gt;&lt;h3&gt;What third parties we receive data from&lt;/h3&gt;&lt;h3&gt;What automated decision making and/or profiling we do with user data&lt;/h3&gt;&lt;h3&gt;Industry regulatory disclosure requirements&lt;/h3&gt;</column>
+            <column name="post_title">Privacy Policy</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">draft</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">open</column>
+            <column name="post_password"></column>
+            <column name="post_name">privacy-policy</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2018-10-11 06:02:59</column>
+            <column name="post_modified_gmt">2018-10-11 06:02:59</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://127.0.0.1/DISPERINPROV/?page_id=3</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">page</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <!-- Table wp_termmeta -->
+        <!-- Table wp_terms -->
+        <table name="wp_terms">
+            <column name="term_id">1</column>
+            <column name="name">Uncategorized</column>
+            <column name="slug">uncategorized</column>
+            <column name="term_group">0</column>
+        </table>
+        <!-- Table wp_term_relationships -->
+        <table name="wp_term_relationships">
+            <column name="object_id">1</column>
+            <column name="term_taxonomy_id">1</column>
+            <column name="term_order">0</column>
+        </table>
+        <!-- Table wp_term_taxonomy -->
+        <table name="wp_term_taxonomy">
+            <column name="term_taxonomy_id">1</column>
+            <column name="term_id">1</column>
+            <column name="taxonomy">category</column>
+            <column name="description"></column>
+            <column name="parent">0</column>
+            <column name="count">1</column>
+        </table>
+        <!-- Table wp_usermeta -->
+        <table name="wp_usermeta">
+            <column name="umeta_id">1</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">nickname</column>
+            <column name="meta_value">supermomod</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">2</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">first_name</column>
+            <column name="meta_value"></column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">3</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">last_name</column>
+            <column name="meta_value"></column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">4</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">description</column>
+            <column name="meta_value"></column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">5</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">rich_editing</column>
+            <column name="meta_value">true</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">6</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">syntax_highlighting</column>
+            <column name="meta_value">true</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">7</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">comment_shortcuts</column>
+            <column name="meta_value">false</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">8</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">admin_color</column>
+            <column name="meta_value">fresh</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">9</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">use_ssl</column>
+            <column name="meta_value">0</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">10</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">show_admin_bar_front</column>
+            <column name="meta_value">true</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">11</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">locale</column>
+            <column name="meta_value"></column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">12</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">wp_capabilities</column>
+            <column name="meta_value">a:1:{s:13:&quot;administrator&quot;;b:1;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">13</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">wp_user_level</column>
+            <column name="meta_value">10</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">14</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">dismissed_wp_pointers</column>
+            <column name="meta_value">wp496_privacy</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">15</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">show_welcome_panel</column>
+            <column name="meta_value">1</column>
+        </table>
+        <!-- Table wp_users -->
+        <table name="wp_users">
+            <column name="ID">1</column>
+            <column name="user_login">supermomod</column>
+            <column name="user_pass">$P$BR3uv5/9WKn9KXVEkP5phT3pNbDz4N1</column>
+            <column name="user_nicename">supermomod</column>
+            <column name="user_email">rectapanca@gmail.com</column>
+            <column name="user_url"></column>
+            <column name="user_registered">2018-10-11 06:02:59</column>
+            <column name="user_activation_key"></column>
+            <column name="user_status">0</column>
+            <column name="display_name">supermomod</column>
+        </table>
+    </database>
+>>>>>>> 60ea42afa8000278c7428628776b04712bf47f35
 </pma_xml_export>

@@ -67,6 +67,9 @@
         </div>
     </div>
     <?php endif; ?>
+   
+<!--
+    /**
     <div class="footer-logo-branding">
         <div class="container">
             <div class="row">
@@ -74,9 +77,10 @@
                     <div class="footer-logo">
                         <div class="site-branding">
                             <?php the_custom_logo(); ?>
-                            <h3 class="site-title font-family-1">
+                        /* <h3 class="site-title font-family-1">
                                 <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a>
                             </h3>
+                            */
                             <?php
                             $description = get_bloginfo('description', 'display');
                             if ($description || is_customize_preview()) : ?>
@@ -89,6 +93,8 @@
             </div>
         </div>
     </div>
+ -->
+
     <?php if (has_nav_menu( 'em-footer-nav' ) || has_nav_menu( 'em-social-nav' )):
         $class = 'col-sm-12';
         if (has_nav_menu( 'em-footer-nav' ) && has_nav_menu( 'em-social-nav' )){

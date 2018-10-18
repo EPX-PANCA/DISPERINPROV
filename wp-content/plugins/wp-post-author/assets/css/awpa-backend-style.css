@@ -1,0 +1,9 @@
+/*Backend style*/
+table.awpa-table tr td{
+    padding: 10px 5px;
+}
+
+.awpa-appearance-table label{
+
+    font-weight: bold;
+}

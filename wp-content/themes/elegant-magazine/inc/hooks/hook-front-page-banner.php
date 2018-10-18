@@ -14,7 +14,7 @@ if (!function_exists('elegant_magazine_banner_slider')) :
         }
 
         $em_slider_category = elegant_magazine_get_option('select_slider_news_category');
-        $em_number_of_slides = 3;
+        $em_number_of_slides = 4;
         $em_featured_category = elegant_magazine_get_option('select_featured_news_category');
         $em_number_of_featured_news = 2;
 
@@ -24,7 +24,7 @@ if (!function_exists('elegant_magazine_banner_slider')) :
         <section class="af-blocks af-main-banner">
             <div class="container">
                 <div class="row no-gutter">
-                    <div class="col-md-6 col-sm-12 no-gutter-col" data-mh="banner-height">
+                    <div class="col-md-12 col-sm-12 no-gutter-col" data-mh="banner-height">
                         <div class="main-slider">
                             <?php
                             $slider_posts = elegant_magazine_get_posts($em_number_of_slides, $em_slider_category);

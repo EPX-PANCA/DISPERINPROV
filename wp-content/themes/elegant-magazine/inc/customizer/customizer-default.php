@@ -41,13 +41,15 @@ function elegant_magazine_get_default_theme_options() {
 
     // Frontpage Section.
     $defaults['show_ticker_news_section'] = 1;
-    $defaults['ticker_section_title'] = esc_html__('Exclusive', 'elegant-magazine');
+    $defaults['ticker_section_title'] = esc_html__('Terkini', 'elegant-magazine');
     $defaults['select_ticker_news_category'] = 0;
     $defaults['ticker_news_count'] = 5;
+   
+     
 
     $defaults['show_main_news_section'] = 0;
     $defaults['select_slider_news_category'] = 0;
-    $defaults['select_featured_news_category'] = 0;
+    $defaults['select_featured_news_category'] = 5;
 
     $defaults['frontpage_content_alignment'] = 'align-content-left';
 

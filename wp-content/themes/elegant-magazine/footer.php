@@ -147,11 +147,8 @@
                     <?php if (!empty($em_copy_right)): ?>
                         <?php echo esc_html($em_copy_right); ?>
                     <?php endif; ?>
-                    <span class="sep"> | </span>
-                    <?php
-                    /* translators: 1: Theme name, 2: Theme author. */
-                    printf(esc_html__('Theme: %1$s by %2$s.', 'elegant-magazine'), '<a href="https://afthemes.com/elegant-magazine">Elegant Magazine</a>', '<a href="https://afthemes.com/">AF themes</a>');
-                    ?>
+                    <span class="sep"> | Powered by Poxedex Developers </span>
+                  
                 </div>
             </div>
         </div>

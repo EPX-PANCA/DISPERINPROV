@@ -33,15 +33,8 @@ if (!function_exists('elegant_magazine_ticker_news')):
                             <?php while ($all_posts->have_posts()):$all_posts->the_post(); ?>
 
 
-                                    <a href="<?php the_permalink();?>"> 
-                                        <?php
-
-                                        if (has_post_thumbnail()) {
-                                            $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'elegant-magazine-thumbnail-small');
-                                            $url = $thumb['0']; ?>
-                                            <img src="<?php echo esc_url($url); ?>" alt="<?php the_title_attribute(); ?>">
-                                        <?php } ?>
-
+                                   <a href="<?php the_permalink();?>"> 
+                                        <!-- :) tempat untuk menambah thumnails pada ticker - karena sebelumnya udah dihapus, tambah aja kalau mau, tapi kalau ditambahain jadi jelek, jadi ga usah :) -->
                                         <?php the_title(); ?>
                                     </a>
 

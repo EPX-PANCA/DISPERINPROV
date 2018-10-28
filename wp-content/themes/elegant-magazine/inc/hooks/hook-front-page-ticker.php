@@ -34,7 +34,7 @@ if (!function_exists('elegant_magazine_ticker_news')):
 
 
                                    <a href="<?php the_permalink();?>"> 
-                                        <!-- :) tempat untuk menambah thumnails pada ticker - karena sebelumnya udah dihapus, tambah aja kalau mau, tapi kalau ditambahain jadi jelek, jadi ga usah :) -->
+                                        <!-- :) tempat untuk menambah thumbnails pada ticker - karena sebelumnya udah dihapus, tambah aja kalau mau, tapi kalau ditambahain jadi jelek, jadi ga usah :) -->
                                         <?php the_title(); ?>
                                     </a>
 
